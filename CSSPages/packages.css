@@ -1,0 +1,110 @@
+.heading1{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.heading1 h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+
+.packages .btn{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax( 40rem, 1fr));
+    gap: 3rem;
+}
+
+
+.packages .box-container .box{
+    border:  .1rem solid;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6){
+    display: inline-block;
+}
+
+.packages .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+
+.packages .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+
+.packages .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.packages .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+
+.packages .box-container .box .content p{
+    font-size: 1.4rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
+
+}
+
+
+.packages .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.packages .btn:hover{
+    background: var(--main-color);
+}
